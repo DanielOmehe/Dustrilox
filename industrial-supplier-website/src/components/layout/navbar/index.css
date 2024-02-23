@@ -1,0 +1,63 @@
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.logo{
+    background: red;
+    display: grid;
+    place-items: center;
+    height: 120px;
+    place-content: center;
+    padding: 0 3rem;
+    color: #fff;
+    border-radius: 0 0 .8rem .8rem;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: -.6rem;
+}
+
+.logo h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+.nav-items li a{
+    color: grey;
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-details h1{
+    font-size: 1rem;
+    color: grey;
+}
+
+.contact-details h2{
+    font-size: 1.2rem;
+}
