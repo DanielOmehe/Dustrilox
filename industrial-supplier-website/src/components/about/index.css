@@ -1,0 +1,82 @@
+.about-us{
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 5rem;
+}
+
+.about-us-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.about-us-text{
+    padding: 2rem 3rem;;
+}
+
+.about-us-text p{
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.about-us-header{
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-header p{
+    color: #000;
+    background: #fff;
+    padding: .5rem 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.line{
+    width: 300px;
+    height: 3px;
+    background: #000;
+    transform: translateY(-1.2rem);
+}
+
+.about-title{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-images{
+    position: relative;
+}
+
+.about-image-one{
+    width: 500px;
+    height: 500px;
+    border-radius: .8rem;
+    background: url("../../images/about-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image-two{
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    transform: translate(24rem, -10rem);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.image-two{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/about-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
