@@ -1,9 +1,28 @@
 import './index.css'
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+    const [scrolled,setScrolled]= useState(false);
+const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 200 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
+let navbarClasses=['navbar'];
+  if(scrolled){
+    navbarClasses.push('scrolled');
+  }
 	return (
-		<nav className="navbar">
+		<nav className={navbarClasses.join(" ")}>
 			<section className='navbar-content'>
 				<Link to={"/"} className="logo">
 					<h1>Dustrilox</h1>

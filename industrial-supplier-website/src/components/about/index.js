@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 import Button from "../shared/button/button";
 import "./index.css";
+import SectionHeader from "../shared/section-header";
 
 const AboutUs = () => {
 	return (
 		<section className="about-us">
-			<div className="about-us-header">
-				<p>About Us</p>
-				<div className="line"></div>
-			</div>
+			<SectionHeader name={'About Us'} />
 			<div className="about-us-content">
 				<div className="about-us-text">
 					<h1 className="about-title">Welcome to Dustrilox</h1>
@@ -29,8 +27,8 @@ const AboutUs = () => {
 				<div className="about-images">
 					<div className="about-image-one"></div>
 					<div className="about-image-two">
-                        <div className="image-two"></div>
-                    </div>
+						<div className="image-two"></div>
+					</div>
 				</div>
 			</div>
 		</section>

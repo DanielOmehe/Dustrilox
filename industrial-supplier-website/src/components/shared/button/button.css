@@ -50,7 +50,7 @@
 }
 
 .arrow:hover{
-    background: red;
+    background: rgb(222, 32, 33);
 }
 
 @keyframes fade {
