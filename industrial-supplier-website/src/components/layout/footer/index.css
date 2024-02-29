@@ -40,23 +40,27 @@ ul li {
     position: relative;
 }
 
-ul li:hover {
+ul li:hover{
 	transform: translateX(10px);
     transition: all .3s ease;
 }
 
+ul li:hover a{
+    color: #fff;
+}
+
 ul li:hover::before {
     content: "";
-    width: 10px;
+    width: 5px;
     height: 2px;
     position: absolute;
-    left: -15px;
-    top: 12px;
+    left: -7px;
+    top: 10px;
     background: red;
 }
 
 ul li a {
-	color: #fff;
+	color: #ababab;
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin: 2rem 0;

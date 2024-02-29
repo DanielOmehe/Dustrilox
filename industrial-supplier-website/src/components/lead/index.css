@@ -1,0 +1,24 @@
+.dustrilox-lead{
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 8rem;
+    background: linear-gradient(to left, rgba(0,0,0,.87), rgba(0,0,0,.78)), url("../../images/bg.jpg");
+    text-align: center;
+}
+
+.dustrilox-lead h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.dustrilox-lead p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.dustrilox-lead h2{
+    font-size: 5rem;
+    color: #fff;
+}

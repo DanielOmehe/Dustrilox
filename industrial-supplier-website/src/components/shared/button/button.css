@@ -1,3 +1,22 @@
+.service-btn{
+    background-color: #ff0000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2.5rem;
+    color: #fff;
+    height: 60px;
+    font-weight: bold;
+    font-size: 1rem;
+    animation: fade .8s linear;
+    font-family: "Inter", sans-serif;
+}
+
 .learn-more{
     background: rgba(0,0,0,.89);
     height: 60px;
@@ -15,18 +34,6 @@
     font-size: 1rem;
     animation: fade .9s linear;
     font-family: "Inter", sans-serif;
-}
-
-.learn-more:hover{   
-    background: #fff;
-    color: #2f2f2f;
-    border: 2px solid #9a9a9a;
-    transition: all .3s linear;
-    outline: none;
-}
-
-.learn-more:hover svg{   
-    fill: #1b1b1b;
 }
 
 .arrow{
