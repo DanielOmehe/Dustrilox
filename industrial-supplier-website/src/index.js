@@ -1,19 +1,35 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/home";
-import './index.css'
+import "./index.css";
+import ContactPage from "./pages/contact"
+import ServicesPage from "./pages/services"
+import AboutUsPage from "./pages/about"
+import DustriloxProvider from "./context";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomePage />,
-		errorElement: (
-			<h1>404 Oop, Sorry the page you're looking for does not exist</h1>
-		),
+	},
+	{
+		path: "/about",
+		element: <AboutUsPage />,
+	},
+	{
+		path: "/contact",
+		element: <ContactPage />,
+	},
+	{
+		path: "/services",
+		element: <ServicesPage />,
 	},
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-	<RouterProvider router={router} />
+createRoot(document.getElementById("root")).render(
+	<DustriloxProvider>
+		<RouterProvider router={router} />
+	</DustriloxProvider>
 );
+

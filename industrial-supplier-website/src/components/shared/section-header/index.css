@@ -1,0 +1,22 @@
+.section-header{
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header p{
+    color: #000;
+    background: #fff;
+    padding: .5rem 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.line{
+    width: 300px;
+    height: 3px;
+    background: #000;
+    transform: translateY(-1.2rem);
+}

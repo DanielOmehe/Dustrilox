@@ -1,0 +1,32 @@
+.our-services{
+    padding: 3rem 4rem;
+    width: 100%;
+    height: auto;
+    margin-top: .5rem;
+    background: linear-gradient(to right, rgba(255, 255, 255, 3.99) 65%, rgba(255, 255, 255, .12)), url("../../images/indsutrial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-container{
+    text-align: center;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+.services-container h1{
+    font-size: 2.5rem;
+    padding: 0 25rem;
+}
+
+.services{
+    width: auto;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}

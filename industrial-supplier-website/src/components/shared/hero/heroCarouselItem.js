@@ -1,5 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
-import Button from "../../shared/button/button";
+import Button from "../button/button";
 
 const HeroContentCarouselItem = ({ url, title, subtitle }) => {
 	return (
