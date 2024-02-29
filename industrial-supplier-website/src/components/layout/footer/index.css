@@ -1,0 +1,111 @@
+.footer {
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, .89), rgba(0, 0, 0, .78)), url("../../../images/footer-bg.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	display: flex;
+	gap: 15rem;
+	padding: 6rem 10rem;
+}
+
+.footer-logo h1 {
+	font-size: 2rem;
+	color: #fff;
+}
+
+.footer-logo p {
+	color: red;
+	text-transform: uppercase;
+}
+
+.footer-content {
+	display: flex;
+	gap: 5rem;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.other-pages h1 {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.footer-services h1 {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+ul li {
+	margin: 2rem 0;
+    position: relative;
+}
+
+ul li:hover {
+	transform: translateX(10px);
+    transition: all .3s ease;
+}
+
+ul li:hover::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    background: red;
+}
+
+ul li a {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 2rem 0;
+}
+
+.newsletter-form {
+    width: 50%;
+}
+
+.newsletter-form h1 {
+	font-size: 2rem;
+	color: #fff;
+	margin-bottom: 3rem;
+}
+
+.newsletter-form p {
+	color: #fff;
+	font-size: 1.2rem;
+	margin-bottom: 3rem;
+}
+
+.newsletter{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    padding-left: .8rem;
+}
+
+.newsletter input{
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding-left: .7rem;
+    font-size: 1rem;
+}
+
+.newsletter button{
+    height: 100%;
+    background: red;
+    color: #fff;
+    width: 28%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
