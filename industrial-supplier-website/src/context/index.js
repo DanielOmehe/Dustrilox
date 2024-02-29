@@ -6,6 +6,10 @@ import Repair from "../images/repair.svg"
 import Cleaner from "../images/Cleaner.jpg";
 import Catering from "../images/catering.jpg";
 import Kitchen from "../images/kitchen.jpeg";
+import Alonso from "../images/alonso.jpg"
+import Josep from "../images/josep.jpg"
+import Maxson from "../images/maxson.jpg"
+import Nico from "../images/nico.jpg"
 
 const DustriloxContext = createContext();
 
@@ -34,16 +38,9 @@ const DustriloxProvider = ({ children }) => {
             subtitle: "Commercial Bakery equipments",
         },
     ];
+
+    const [ currentTestimony, setCurrentTestimony ] = useState(0)
     const [currentItemIndx, setCurrentItemIndx] = useState(0);
-
-    useEffect(()=>{
-        const changeSlide = setInterval(() => {
-            if(currentItemIndx < carouselItms.length - 1) setCurrentItemIndx(currentItemIndx + 1);
-            else setCurrentItemIndx(0);
-        }, 5000);
-
-        return () => clearInterval(changeSlide)
-    }, [currentItemIndx, carouselItms.length])
 
 	const nextItemIndx = () => {
 		if (currentItemIndx < carouselItms.length - 1)
@@ -80,7 +77,53 @@ const DustriloxProvider = ({ children }) => {
 			details: "",
 		},
 	];
-	return <DustriloxContext.Provider value={{ data, currentItemIndx, prevItemIndx, nextItemIndx, carouselItms }}>{children}</DustriloxContext.Provider>;
+
+    const testimonials = [
+        {
+            url: Alonso,
+            name: "Alonso D. Dawson",
+            post: 'Head Of Idea',
+            testimony: '“ I think Dikons is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance ”'
+        },
+        {
+            url: Josep,
+            name: "Josep Andrew",
+            post: 'Head Of Idea',
+            testimony: '“ I think Dikons is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance ”'
+        },
+        {
+            url: Maxson,
+            name: "Maxson Dowson",
+            post: 'Head Of Idea',
+            testimony: '“ I think Dikons is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance ”'
+        },
+        {
+            url: Nico,
+            name: "Nico Robin",
+            post: 'Head Of Idea',
+            testimony: '“ I think Dikons is the best theme I ever seen this year. Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance ”'
+        },
+    ]
+
+    useEffect(()=>{
+        const changeSlide = setInterval(() => {
+            if(currentItemIndx < carouselItms.length - 1) setCurrentItemIndx(currentItemIndx + 1);
+            else setCurrentItemIndx(0);
+        }, 5000);
+
+        return () => clearInterval(changeSlide)
+    }, [currentItemIndx, carouselItms.length, currentTestimony, testimonials.length])
+
+    useEffect(()=>{
+        const newSlide = setInterval(() => {
+            if(currentTestimony < testimonials.length - 1) setCurrentTestimony(currentTestimony + 1);
+            else setCurrentTestimony(0);
+        }, 10000);
+
+        return () => clearInterval(newSlide)
+    }, [currentTestimony, testimonials.length])
+    
+	return <DustriloxContext.Provider value={{ data, currentItemIndx, prevItemIndx, nextItemIndx, carouselItms, testimonials, currentTestimony }}>{children}</DustriloxContext.Provider>;
 };
 
 export default DustriloxProvider;

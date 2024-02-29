@@ -6,6 +6,7 @@ import AboutUs from "../../components/about";
 import OurServices from "../../components/services";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import Button from "../../components/shared/button/button";
+import ClientTestimonial from "../../components/testimonial";
 import { useDustriloxContext } from "../../context";
 
 const HomePage = () => {
@@ -32,6 +33,7 @@ const HomePage = () => {
 			</HeroContent>
 			<AboutUs />
 			<OurServices />
+            <ClientTestimonial />
 		</Layout>
 	);
 };
