@@ -2,7 +2,7 @@
     width: 100%;
     height: fit-content;
     padding: 5rem 8rem;
-    background: linear-gradient(to left, rgba(0,0,0,.87), rgba(0,0,0,.78)), url("../../images/bg.jpg");
+    background: linear-gradient(to left, rgba(0,0,0,.87), rgba(0,0,0,.78)), url("../../../images/bg.jpg");
     text-align: center;
 }
 

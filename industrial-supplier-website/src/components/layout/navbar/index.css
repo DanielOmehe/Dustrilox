@@ -7,7 +7,7 @@
     padding: 0 10rem;
     position: fixed;
     transition: all .3s ease;
-    z-index: 10;
+    z-index: 100;
 }
 
 .scrolled{
@@ -28,9 +28,9 @@
     place-items: center;
     height: 100px;
     place-content: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
     color: #fff;
-    border-radius: 0 0 .8rem .8rem;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 .logo h1{
@@ -51,9 +51,13 @@
 }
 
 .nav-items li a{
+    color: #ababab;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-items li a:hover{
     color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
 }
 
 .contact-details{
@@ -69,6 +73,6 @@
 }
 
 .contact-details h2{
-    font-size: 1rem;
+    font-size: .9rem;
     color: #fff;
 }

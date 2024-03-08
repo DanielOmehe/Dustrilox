@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Button from "../shared/button/button";
+import Button from "../../../components/shared/button";
 import "./index.css";
-import SectionHeader from "../shared/section-header";
+import SectionHeader from "../../../components/shared/section-header";
 
 const AboutUs = () => {
 	return (

@@ -6,6 +6,7 @@
 	display: flex;
 	gap: 15rem;
 	padding: 6rem 10rem;
+    margin-top: 4rem;
 }
 
 .footer-logo h1 {
@@ -20,7 +21,7 @@
 
 .footer-content {
 	display: flex;
-	gap: 5rem;
+	gap: 4rem;
 	justify-content: space-between;
 	flex: 1;
 }
@@ -35,21 +36,42 @@
 	font-size: 1.5rem;
 }
 
-ul li {
+.footer ul li {
 	margin: 2rem 0;
     position: relative;
 }
 
-ul li:hover{
-	transform: translateX(10px);
-    transition: all .3s ease;
-}
+ul li a {
+    color: #ababab;
+    position: relative;
+    text-decoration: none;
+  }
+  
+ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #DE2021;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+ ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
 
-ul li:hover a{
+.footer ul li a:hover{
     color: #fff;
 }
 
-ul li:hover::before {
+/* .footer ul li:hover::before {
     content: "";
     width: 5px;
     height: 2px;
@@ -57,14 +79,14 @@ ul li:hover::before {
     left: -7px;
     top: 10px;
     background: red;
-}
+} */
 
-ul li a {
+/* .footer ul li a {
 	color: #ababab;
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin: 2rem 0;
-}
+} */
 
 .newsletter-form {
     width: 50%;

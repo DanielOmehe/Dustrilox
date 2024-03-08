@@ -1,0 +1,67 @@
+.contact-info{
+    width: 100%;
+    padding: 5rem 8rem;
+    background: url("../../images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-info-list{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-item{
+    width: 24%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item:hover .contact-icon{
+    background: #DE2021;
+    /* transform: rotate3d(1, 1, 0, 90deg); */
+}
+
+.contact-item:hover .contact-icon svg{
+    color: #fff;
+    fill: none;
+}
+
+.contact-item h1{
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item a{
+    color: #898989;
+    margin-bottom: .5rem;
+}
+
+.contact-icon{
+    width: 100px;
+    height: 100px;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 2.5rem;
+}
+
+.contact-info-list .contact-item:nth-child(2) .contact-icon svg{
+    fill: none;
+}
+
+.contact-info-list .contact-item:hover:nth-child(4) .contact-icon svg{
+    fill: #fff;
+}
+
+.social-contact{
+    display: flex;
+    gap: .8rem;
+}

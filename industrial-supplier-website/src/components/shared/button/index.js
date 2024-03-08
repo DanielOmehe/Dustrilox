@@ -1,4 +1,4 @@
-import './button.css'
+import './index.css'
 
 const Button =({ classname, children, clickHandler })=>{
     return(

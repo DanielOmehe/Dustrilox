@@ -1,8 +1,8 @@
 import "./index.css";
-import SectionHeader from "../shared/section-header";
-import Testimonial from "../../images/testimonial.jpg";
+import SectionHeader from "../../../components/shared/section-header";
+import Testimonial from "../../../images/testimonial.jpg";
 import ClientTestimonialCarousel from "./testimonialCarousel";
-import { useDustriloxContext } from "../../context";
+import { useDustriloxContext } from "../../../context";
 import ClientTestimonialCarouselItem from "./testimonialCarouselItems";
 
 const ClientTestimonial = () => {

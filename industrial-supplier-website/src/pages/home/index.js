@@ -2,13 +2,13 @@ import HeroContent from "../../components/shared/hero";
 import HeroContentCarousel from "../../components/shared/hero/heroCarousel"
 import HeroContentCarouselItem from "../../components/shared/hero/heroCarouselItem"
 import Layout from "../../components/layout";
-import AboutUs from "../../components/about";
-import OurServices from "../../components/services";
+import AboutUs from "./about";
+import OurServices from "./services";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-import Button from "../../components/shared/button/button";
-import ClientTestimonial from "../../components/testimonial";
+import Button from "../../components/shared/button";
+import ClientTestimonial from "./testimonial";
 import { useDustriloxContext } from "../../context";
-import DustriloxLead from "../../components/lead";
+import DustriloxLead from "./lead";
 
 const HomePage = () => {
 	const { prevItemIndx, nextItemIndx, currentItemIndx, carouselItms } =

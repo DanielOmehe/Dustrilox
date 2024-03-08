@@ -1,5 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
-import Button from "../button/button";
+import Button from "../button";
 import { Link } from "react-router-dom";
 
 const HeroContentCarouselItem = ({ url, title, subtitle }) => {

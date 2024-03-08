@@ -1,5 +1,5 @@
 import { Children } from "react";
-import { useDustriloxContext } from "../../context";
+import { useDustriloxContext } from "../../../context";
 
 const ClientTestimonialCarousel = ({ children }) => {
 const { currentTestimony } =  useDustriloxContext()

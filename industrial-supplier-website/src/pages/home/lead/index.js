@@ -1,5 +1,5 @@
 import "./index.css"
-import Button from "../shared/button/button";
+import Button from "../../../components/shared/button";
 import { Link } from "react-router-dom";
 
 const DustriloxLead = () => {
