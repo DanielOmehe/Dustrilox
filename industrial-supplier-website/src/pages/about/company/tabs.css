@@ -1,0 +1,64 @@
+.company-info-tabs{
+    width: 100%;
+    height: fit-content;
+    margin-top: .5rem;
+}
+
+.company-info-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+}
+
+.company-logo{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    z-index: 10;
+}
+
+/* .company-logo::before{
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    z-index: 0;
+}
+
+.company-logo::after{
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    z-index: 0;
+} */
+
+.company-logo h1{
+    font-size: 1.5rem;
+    color: #454545;
+}
+
+.company-info-tab p{
+    font-size: 1.2rem;
+    color: #9a9a9a;
+    margin: 6.5rem 0;
+    padding: 0 15rem;
+    line-height: 1.5rem;
+}

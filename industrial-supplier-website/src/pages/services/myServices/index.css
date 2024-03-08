@@ -1,0 +1,10 @@
+.my-services{
+    width: 100%;
+    height: fit-content;
+    padding: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    z-index: 0;
+}

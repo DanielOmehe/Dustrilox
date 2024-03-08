@@ -1,5 +1,6 @@
 import { FaAngleRight } from "react-icons/fa6";
-import Button from "../button/button";
+import Button from "../button";
+import { Link } from "react-router-dom";
 
 const HeroContentCarouselItem = ({ url, title, subtitle }) => {
 	return (
@@ -14,10 +15,19 @@ const HeroContentCarouselItem = ({ url, title, subtitle }) => {
 		>
 			<h1>{title}</h1>
 			<h2>{subtitle}</h2>
-			<Button classname={"learn-more"}>
-				<p>Learn more</p>
-                <FaAngleRight size={15} fill="#fff" />
-			</Button>
+			<div className="cta-btns">
+				<Link to={"/services"}>
+					<Button classname={"service-btn"}>
+						<p>Our Services</p>
+						<FaAngleRight size={15} fill="#fff" />
+					</Button>
+				</Link>
+				<Link to={"/about"}>
+					<Button classname={"learn-more"}>
+						<p>Learn more</p>
+					</Button>
+				</Link>
+			</div>
 		</div>
 	);
 };

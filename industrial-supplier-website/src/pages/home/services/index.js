@@ -1,7 +1,7 @@
 import "./index.css";
-import SectionHeader from "../shared/section-header";
-import ServiceCard from "./service";
-import { useDustriloxContext } from "../../context";
+import SectionHeader from "../../../components/shared/section-header";
+import ServiceCard from "../../../components/shared/service/service";
+import { useDustriloxContext } from "../../../context";
 
 const OurServices = () => {
     const { data } = useDustriloxContext();
@@ -11,7 +11,7 @@ const OurServices = () => {
 			<div className="services-container">
 				<h1>We have highly-tailored industry solution.</h1>
 				<div className="services">
-					{data.map(({ icon, title, desc }) => (
+					{data.slice(0, 4).map(({ icon, title, desc }) => (
 						<ServiceCard key={title} title={title} desc={desc} icon={icon} />
 					))}
 				</div>

@@ -2,12 +2,11 @@
     width: 100%;
     height: fit-content;
     padding: 8rem 5rem;
-    border: 2px solid #000;
     display: flex;
     align-items: center;
     gap: 4rem;
     background: #343a40;
-    background-image: url("../../images/background.png");
+    background-image: url("../../../images/background.png");
     background-repeat: no-repeat;
 }
 
@@ -18,10 +17,6 @@
 .testimonial-container{
     padding: 3rem;
 }
-
-/* .client-testimony{
-    border: 2px solid #fff;
-} */
 
 .testimony-title{
     font-size: 3rem;
